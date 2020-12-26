@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PersonneComponent implements OnInit {
   @Input() name:string;
   @Input() age:number;
-  @Input() etud:boolean;
+  @Input('etud') statut:boolean;
 
   constructor() { }
 
